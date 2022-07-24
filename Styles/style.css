@@ -1,0 +1,91 @@
+/*---------------
+    fonts
+---------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/*---------------
+   ALL Section
+---------------- */
+.All {
+    padding: 20px 60px;
+    display: grid;
+    grid-template-columns: repeat(1fr, 2fr);
+    grid-row-gap: 100px;
+}
+
+/*---------------
+  Header Section
+---------------- */
+/* .header {
+    margin-bottom: 100px;
+} */
+
+.top-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 30px;
+}
+
+.headline {
+    font-size: 4.5em;
+    margin-bottom: 5px;
+}
+
+.headline,
+.headline-info {
+    color: white;
+}
+
+.player-img {
+    width: 40%;
+}
+
+.banner-info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-start;
+}
+
+.watch-live-button {
+    background-color: #DD0000;
+    width: 100px;
+    height: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.watch-live {
+    color: white;
+    text-decoration: none;
+}
+
+.fa-greater-than {
+    color: white;
+}
+
+/*---------------
+  Main Section
+---------------- */
+.main-class {
+    display: grid;
+    grid-template-columns: repeat(1fr, 4fr);
+    grid-column-gap: 50px;
+    background-color: white;
+    border: 2px dashed rebeccapurple;
+    /* width: 1000px;
+    height: 1000px; */
+}
+
+.sidebar-link {
+    width: 20%;
+    border: 5px dashed green;
+    background-color: black;
+}
+
+.upcoming-match {}
