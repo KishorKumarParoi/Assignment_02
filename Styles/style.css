@@ -5,7 +5,7 @@
 
 /*---------------
    ALL Section
----------------- */
+----------------*/
 .All {
     padding: 20px 60px;
     display: grid;
@@ -16,6 +16,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
+    text-align: center;
 }
 
 /*---------------
@@ -90,6 +91,7 @@ body {
     display: grid;
     grid-template-columns: 250px 950px;
     grid-column-gap: 10px;
+    justify-content: space-between;
 }
 
 .Sidebar-link {
@@ -101,19 +103,27 @@ body {
 }
 
 .upcoming-match,
-.all-group,
+.All-Group,
 .Blog {
-    font-weight: 500px;
-    background-color: #FFFFFF;
+    background-color: white;
+    text-decoration: none;
+    align-items: center;
+    margin-left: 15px;
+    padding: 10px;
+    margin-bottom: 30px;
     border-radius: 10px;
     text-align: center;
-    padding: 10px;
-    margin-bottom: 20px;
-    font-size: 20x;
 }
 
-.Blog {
-    background-color: #DD0000;
+.Blog:hover {
+    background-color: yellow;
+    color: white;
+}
+
+.upcoming-match:hover,
+.All-Group:hover {
+    background-color: red;
+    color: white;
 }
 
 .transfer {
@@ -161,10 +171,47 @@ Footer Section
 footer {
     background-color: #161616;
     height: 1000px;
-    margin: auto;
 }
 
 .footer-show {
     display: flex;
     padding-left: 170px;
+}
+
+.social-icon {
+    text-align: center;
+    font-size: 50px;
+}
+
+/*.................. 
+Upcoming-match
+................... */
+
+.match-time {
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.country-image {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.match-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.match {
+    margin-left: 30px;
+}
+
+.time {
+    margin-left: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    justify-content: center;
 }
