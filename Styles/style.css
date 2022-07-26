@@ -65,7 +65,7 @@ body {
 
 .watch-live-button {
     background-color: #DD0000;
-    width: 130px;
+    width: 160px;
     height: 20px;
     display: flex;
     justify-content: space-around;
@@ -83,6 +83,44 @@ body {
 .fa-greater-than {
     color: white;
 }
+
+@keyframes sliding {
+    0% {
+        background-color: lime;
+        transform: 1s ease-in-out 0.2s;
+    }
+
+    25% {
+        background-color: blue;
+        transform: 1s ease-in-out 0.2s;
+    }
+
+    50% {
+        background-color: yellow;
+        transform: 1s ease-in-out 0.2s;
+    }
+
+    75% {
+        background-color: crimson;
+        transform: 1s ease-in-out 0.2s;
+    }
+
+    100% {
+        background-color: magenta;
+        transform: 1s ease-in-out 0.2s;
+    }
+}
+
+.animation {
+    transition: transform 1s ease-in-out 0.2s;
+    animation: sliding 3s ease-in-out 0.1s infinite alternate;
+    animation-play-state: running;
+}
+
+.animation:hover {
+    transform: translate(30px, 0);
+}
+
 
 /*---------------
   Main Section
