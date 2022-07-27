@@ -22,21 +22,22 @@ body {
 /*---------------
   Header Section
 ---------------- */
-/* .header {
-    margin-bottom: 100px;
-} */
 
 .top-banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
     background-color: black;
     border-radius: 30px;
 }
 
 .headline {
-    font-size: 3em;
+    font-size: 2em;
     margin-bottom: 1px;
+}
+
+.img {
+    width: 180%;
 }
 
 .headline,
@@ -83,6 +84,10 @@ body {
 .fa-greater-than {
     color: white;
 }
+
+/* ---------------
+     Animation
+------------------*/
 
 @keyframes sliding {
     0% {
@@ -134,10 +139,14 @@ body {
 
 .Sidebar-link {
     background-color: #161616;
+    display: flex;
+    flex-direction: column;
     padding: 25px;
     border-radius: 10px;
     width: 200px;
     height: 225px;
+    align-content: stretch;
+    justify-content: space-evenly;
 }
 
 .upcoming-match,
@@ -148,7 +157,6 @@ body {
     align-items: center;
     margin-left: 15px;
     padding: 10px;
-    margin-bottom: 30px;
     border-radius: 10px;
     text-align: center;
 }
@@ -202,6 +210,13 @@ Transfer Window Grid
     align-items: flex-end;
 }
 
+.view-all {
+    background-color: red;
+    width: 100px;
+    height: 30px;
+    margin-left: 40%;
+}
+
 /*.................. 
 Footer Section 
 ................... */
@@ -252,4 +267,176 @@ Upcoming-match
     font-weight: 400;
     font-size: 20px;
     justify-content: center;
+}
+
+@media only screen and (max-width:668px) {
+
+    .top-banner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: start;
+        background-color: black;
+        border-radius: 30px;
+    }
+
+    .headline-info {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .watch-live-button {
+        background-color: #DD0000;
+        width: 160px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+        align-items: center;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+    .watch-live {
+        color: white;
+        text-decoration: none;
+    }
+
+    .banner-info {
+        display: flex;
+        flex-direction: column;
+        width: 15%;
+        align-items: flex-start;
+    }
+
+    .img {
+        width: 15%;
+    }
+
+    .main-class {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .Sidebar-link {
+        margin-bottom: 30px;
+        margin-left: 20px;
+    }
+
+    .transfer {
+        background-color: #FFFFFF;
+    }
+
+    .transfer-img {
+        width: 20%;
+    }
+
+    .transfer-window {
+        width: 30%;
+    }
+
+    footer {
+        background-color: #161616;
+        height: 1000px;
+    }
+
+    .footer-show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-icon {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .view-all {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:669px) and (max-width:992px) {
+    .top-banner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: start;
+        background-color: black;
+        border-radius: 30px;
+    }
+
+    .headline-info {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .watch-live-button {
+        background-color: #DD0000;
+        width: 160px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+        align-items: center;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+
+    .watch-live {
+        color: white;
+        text-decoration: none;
+    }
+
+    .banner-info {
+        display: flex;
+        flex-direction: column;
+        width: 15%;
+        align-items: flex-start;
+    }
+
+    .img {
+        width: 15%;
+    }
+
+    .main-class {
+        grid-template-columns: repeat(1fr, 1);
+    }
+
+    .Sidebar-link {
+        margin-bottom: 30px;
+        margin-left: 20px;
+    }
+
+    .transfer {
+        background-color: #FFFFFF;
+    }
+
+    .transfer-img {
+        width: 20%;
+    }
+
+    .transfer-window {
+        width: 30%;
+    }
+
+    footer {
+        background-color: #161616;
+        height: 1000px;
+    }
+
+    .footer-show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-icon {
+        text-align: center;
+        font-size: 50px;
+    }
+
+}
+
+@media only screen and (min-width:993px) {
+    .view-all {
+        display: none;
+    }
 }
