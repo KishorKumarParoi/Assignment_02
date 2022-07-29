@@ -18,6 +18,7 @@
     grid-template-columns: repeat(2, 1fr);
     background-color: #161616;
     margin-bottom: 50px;
+    border-radius: 10px;
 }
 
 .headline {
@@ -106,6 +107,8 @@
     display: grid;
     grid-template-columns: 300px repeat(1, 1fr);
     gap: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
 }
 
 .side-bar {
@@ -117,6 +120,7 @@
     padding: 30px;
     justify-content: center;
     background-color: black;
+    border-radius: 5px;
 }
 
 .upcoming-match,
