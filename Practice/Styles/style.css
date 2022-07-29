@@ -363,6 +363,10 @@ Upcoming-match
         border-radius: 30px;
     }
 
+    .headline {
+        font-size: 1em;
+    }
+
     .headline-info {
         white-space: nowrap;
         overflow: hidden;
@@ -377,7 +381,8 @@ Upcoming-match
         justify-content: center;
         padding: 15px;
         align-items: center;
-        border-radius: 10px;
+        border: rad;
+        ius: 10px;
         font-size: 16px;
     }
 
@@ -398,39 +403,14 @@ Upcoming-match
     }
 
     .main-class {
-        grid-template-columns: repeat(1fr, 1);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .Sidebar-link {
         margin-bottom: 30px;
         margin-left: 20px;
-    }
-
-    .transfer {
-        background-color: #FFFFFF;
-    }
-
-    .transfer-img {
-        width: 20%;
-    }
-
-    .transfer-window {
-        width: 30%;
-    }
-
-    footer {
-        background-color: #161616;
-        height: 1000px;
-    }
-
-    .footer-show {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .social-icon {
-        text-align: center;
-        font-size: 50px;
+        height: 70px;
+        width: 200px;
     }
 
 }
